@@ -1,0 +1,48 @@
+/*
+Nama : Calvin Christian
+NIM : H1051171030
+*/
+
+
+class Buah
+{
+     private String warnakulit;
+     private String warnaisi;
+     private String rasa;
+     private String vitamin;
+     private String Namabuah;
+     private int harga;
+
+     public Buah(String NB,String WK,String WI, String rasa, String vit,int harga){  
+	this.warnakulit=WK;
+        	this.warnaisi=WI;
+        	this.rasa=rasa;
+       	  this.vitamin=vit;
+        	this.Namabuah=NB;
+        	this.harga=harga;
+        
+     	}
+
+	public void tampilData()
+	{ System.out.println("=======Jenis Buah=========");
+   	System.out.println("Nama Buah                    	: "+this.Namabuah);
+   	System.out.println("Warna Kulit                  	: "+this.warnakulit);
+   	System.out.println("Warna Isi                    	: "+this.warnaisi);
+   	System.out.println("Rasa                         		: "+this.rasa);
+   	System.out.println("Vitamin yang terkandung      	: "+this.vitamin);
+   	System.out.println("Harga per Kilogram           	: "+this.harga+" per Kilogram");
+   	System.out.println("");
+    }
+}
+
+ public class MethodCalvin{
+
+ public static void main(String[] args){
+
+    Buah   Buah1=new Buah("Semangka","Hijau","Merah","Manis","A,B6, dan C",7000);
+    Buah1.tampilData();
+    
+    Buah   Buah2=new Buah("Buah Naga","Ungu ke Merah-merahan/Kuning","Ungu ke Merah-merahan/Putih","Manis","C,B1,B2, dan B3",30000);
+    Buah2.tampilData();
+   }
+}   
